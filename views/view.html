@@ -1,0 +1,21 @@
+$def with(a1,a2, c="")
+<html>
+    <body>
+        <table>
+            <tbody>
+                <tr>
+                    $for x in a1:
+                        <td style="border: 1px solid black;">
+                            $x
+                        </td>
+                </tr>
+                <tr>
+                    $for y in a2:
+                        <td style="border: 1px solid black;">
+                            <a href="/page1/?id=$y">Borrar</a>
+                        </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
